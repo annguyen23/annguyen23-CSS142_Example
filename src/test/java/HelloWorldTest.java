@@ -33,7 +33,7 @@ public class HelloWorldTest {
         		    "   ***\n" +
          		    "  *****\n" +
         		    " *******\n" +
-        		    "*********"
+        		    "*********\n"
 			    ,outputStreamCaptor.toString());
 	}
 	
@@ -45,7 +45,7 @@ public class HelloWorldTest {
         		   "[| o o |]\n" +
          		   " |  ^  | \n" +
         		   " | '-' | \n" +
-        		   " +-----+ "
+        		   " +-----+ \n"
 			    , outputStreamCaptor.toString());
 	}
 	
