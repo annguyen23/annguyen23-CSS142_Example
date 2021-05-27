@@ -8,6 +8,7 @@ When committing, GitHub will ask you to enter a message. It helps to easily unde
 ## Action
 ![image](https://user-images.githubusercontent.com/54456351/119811221-b7ee7b00-be9b-11eb-933a-05b0733ba569.png)
 The workflow are your commissions from newest to latest. 
+Click on the one that you want to see the report.
 
 ### Test Report
 ![image](https://user-images.githubusercontent.com/54456351/119812525-15cf9280-be9d-11eb-8125-f24d61ebd43b.png)
