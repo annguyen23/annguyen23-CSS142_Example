@@ -23,7 +23,7 @@ public class HelloWorldTest {
         
     	Assert.assertEquals("The main() method should print out \"Hello, World!\". Check carefully." 
 			    + "One missing/extra character like space can make this test case failed"
-			    ,"Hello, World!", outputStreamCaptor.toString()
+			    ,"Hello, World !", outputStreamCaptor.toString()
       	.trim());
 	}
 	
