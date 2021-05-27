@@ -52,7 +52,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
-   misspell:
+  misspell: # this checks spelling in comments
     name: misspell
     runs-on: ubuntu-latest
     steps:
