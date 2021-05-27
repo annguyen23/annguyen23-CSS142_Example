@@ -36,8 +36,8 @@ public class HelloWorldTest {
         		    "\"   ***\"\n" +
          		    "\"  *****\"\n" +
         		    "\" *******\"\n" +
-        		    "\"*********\"\n. \nCheck carefully!" 
-			    + "One missing/extra character like space can make this test case failed\n"
+        		    "\"*********\"\n. \nCheck carefully!" +
+			    "One missing/extra character like space can make this test case failed\n",
 			    "    *\n" +
         		    "   ***\n" +
          		    "  *****\n" +
@@ -50,7 +50,14 @@ public class HelloWorldTest {
 	public void testPrintFaceMethod() {
     	HelloWorld.printFace();
         
-    	Assert.assertEquals(" +\"\"\"\"\"+ \n" +
+    	Assert.assertEquals( "The main() method should print out \n" +
+			    "\" +\"\"\"\"\"+ \"\n" +
+        		    "\"[| o o |]\"\n" +
+         		    "\" |  ^  | \"\n" +
+        		    "\" | '-' | \"\n" +
+        		    "\" +-----+ \"\n. \nCheck carefully!" +
+			    "One missing/extra character like space can make this test case failed\n",
+			   " +\"\"\"\"\"+ \n" +
         		   "[| o o |]\n" +
          		   " |  ^  | \n" +
         		   " | '-' | \n" +
