@@ -21,9 +21,9 @@ public class HelloWorldTest {
 	public void testMainMethod() {
     	HelloWorld.main(new String[] {"arg1", "arg2", "arg3"});
         
-    	Assert.assertEquals("The main() method should print out \"Hello, World!\". Check carefully." 
-			    + "One missing/extra character like space can make this test case failed"
-			    ,"Hello, World !", outputStreamCaptor.toString()
+    	Assert.assertEquals("The main() method should print out \"Hello, World!\". \nCheck carefully!" 
+			    + "One missing/extra character like space can make this test case failed\n"
+			    ,"Hello, World!", outputStreamCaptor.toString()
       	.trim());
 	}
 	
@@ -31,7 +31,14 @@ public class HelloWorldTest {
 	public void testpPrintStarPiramidMethod() {
     	HelloWorld.printStarPiramid();
         
-    	Assert.assertEquals("    *\n" +
+    	Assert.assertEquals( "The main() method should print out \n" +
+			    "\"    *\"\n" +
+        		    "\"   ***\"\n" +
+         		    "\"  *****\"\n" +
+        		    "\" *******\"\n" +
+        		    "\"*********\"\n. \nCheck carefully!" 
+			    + "One missing/extra character like space can make this test case failed\n"
+			    "    *\n" +
         		    "   ***\n" +
          		    "  *****\n" +
         		    " *******\n" +
