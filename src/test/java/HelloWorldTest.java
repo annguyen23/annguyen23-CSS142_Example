@@ -29,10 +29,10 @@ public class HelloWorldTest {
 	public void testpPrintStarPiramidMethod() {
     	HelloWorld.printStarPiramid();
         
-    	Assert.assertEquals("    *" +
-        		    "   ***" +
-         		    "  *****" +
-        		    " *******" +
+    	Assert.assertEquals("    */n" +
+        		    "   ***/n" +
+         		    "  *****/n" +
+        		    " *******/n" +
         		    "*********"
 			    ,outputStreamCaptor.toString().trim());
 	}
@@ -41,11 +41,11 @@ public class HelloWorldTest {
 	public void testPrintFaceMethod() {
     	HelloWorld.printFace();
         
-    	Assert.assertEquals(" +\"\"\"\"\"+ " +
-        		   "[| o o |]" +
-         		   " |  ^  | " +
-        		   " | '-' | " +
-        		   " +-----+ "
+    	Assert.assertEquals(" +\"\"\"\"\"+ /n" +
+        		   "[| o o |]/n" +
+         		   " |  ^  | /n" +
+        		   " | '-' | /n" +
+        		   " +-----+ /n"
 			    , outputStreamCaptor.toString().trim());
 	}
 	
