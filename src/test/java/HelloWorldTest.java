@@ -18,24 +18,36 @@ public class HelloWorldTest {
 	}
 	
 	@Test
-	public void givenSystemOutRedirection_whenInvokePrintln_thenOutputCaptorSuccess() {
+	public void testMainMethod() {
     	HelloWorld.main(new String[] {"arg1", "arg2", "arg3"});
         
     	Assert.assertEquals("Hello, World!", outputStreamCaptor.toString()
       	.trim());
 	}
 	
-/*
 	@Test
-	@Ignore
-	public void HelloTest() {
-		HelloWorld.main(new String[] {"arg1", "arg2", "arg3"});
-		//Assert.assertEquals("Hello", HelloWorld.hello);
-		//System.out.println(HelloWorld.hello);
-		Assert.assertEquals("Hello, World!", HelloWorld.hello);
-	
+	public void testpPrintStarPiramidMethod() {
+    	HelloWorld.printStarPiramid();
+        
+    	Assert.assertEquals("    *" +
+        		    "   ***" +
+         		    "  *****" +
+        		    " *******" +
+        		    "*********"
+			    ,outputStreamCaptor.toString().trim());
 	}
-*/
+	
+	@Test
+	public void testPrintFaceMethod() {
+    	HelloWorld.printFace();
+        
+    	Assert.assertEquals(" +\"\"\"\"\"+ " +
+        		   "[| o o |]" +
+         		   " |  ^  | " +
+        		   " | '-' | " +
+        		   " +-----+ "
+			    , outputStreamCaptor.toString().trim());
+	}
 	
 	@After
 	public void tearDown() {
