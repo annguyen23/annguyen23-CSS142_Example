@@ -1,5 +1,6 @@
 # HelloWorldJUnit
-
+![image](https://user-images.githubusercontent.com/54456351/119812273-d3a65100-be9c-11eb-9c53-326b5fc460c3.png)
+After commiting/uploading your Java files. Click "Actions" to see the report.
 
 ## Test Report
 The Test Report shows the result of how many test cases that are passed, failed, or skipped. 
