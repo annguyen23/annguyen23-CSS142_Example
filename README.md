@@ -28,6 +28,8 @@ The Test Report shows the result of how many test cases that are passed, failed,
 
 ### checkstyle
 ![image](https://user-images.githubusercontent.com/54456351/119812559-1ec06400-be9d-11eb-907d-e1b71a97a447.png)
+![image](https://user-images.githubusercontent.com/54456351/119814435-3f89b900-be9f-11eb-8578-2272566be21c.png)
+
 checkstyle help to check if you code meet the Google Java Style Guide. 
 Click "checkstyle" for the report of style
 
