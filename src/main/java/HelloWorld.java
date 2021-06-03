@@ -5,7 +5,7 @@
 class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World! ") //an extra space was added in the end to make test case failed
+        System.out.println("Hello, World! "); //an extra space was added in the end to make test case failed
     }
     
     public static void printStarPiramid() {
@@ -32,5 +32,6 @@ class HelloWorld {
     public static void nothing(){
         if (true) if (false) 
             for (int i=0; i<10; i++) i++;
+        System.out.println("Hello, World! ");System.out.println();
     }
 }
