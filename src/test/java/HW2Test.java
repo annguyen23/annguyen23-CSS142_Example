@@ -1,5 +1,3 @@
-package HW2;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before;
