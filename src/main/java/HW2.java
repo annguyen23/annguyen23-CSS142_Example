@@ -1,5 +1,3 @@
-package HW2;
-
 import java.util.Scanner;
 
 public class HW2 {
@@ -9,10 +7,10 @@ public class HW2 {
     }
     public static void runProgramOne() {
     	segment1("");
-//    	segment2("");
-//    	segment2("");
-//    	segment1("");
-//    	segment3("");
+        segment2("");
+        segment2("");
+        segment1("");
+        segment3("");
     }
     public static void runProgramTwo() {
     	// take user's inputs
