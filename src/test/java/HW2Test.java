@@ -7,7 +7,7 @@ import org.junit.After;
 import java.io.*;
 import java.util.Locale;
 
-public class HW2Driver {
+public class HW2Test {
 
 
 	private final PrintStream standardOut = System.out;
