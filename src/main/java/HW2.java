@@ -6,12 +6,12 @@ public class HW2 {
         runProgramTwo();
     }
     public static void runProgramOne() {
-        System.out.println("abc");
-//     	segment1("");
-//         segment2("");
-//         segment2("");
-//         segment1("");
-//         segment3("");
+        
+    	segment1("");
+        segment2("");
+        segment2("");
+        segment1("");
+        segment3("");
     }
     public static void runProgramTwo() {
     	// take user's inputs
