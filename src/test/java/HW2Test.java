@@ -105,7 +105,7 @@ public class HW2Test {
 					    , outputStreamCaptor.toString());
 	}
 	
-	
+	/*
 	@Test
 	public void testProgramTwo() {
     	HW2.runProgramTwo();
@@ -192,6 +192,7 @@ public class HW2Test {
 			    + "|----------------" +  "\n"
 					    , outputStreamCaptor.toString());
 	}
+	*/
 	
 	@After
 	public void tearDown() {
