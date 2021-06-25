@@ -16,12 +16,12 @@ import java.util.Locale;
 public class HW2_2Test {
   
   private final PrintStream standardOut = System.out;
-	private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+  private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 	
-	@Before
-	public void setUp() {
-    	System.setOut(new PrintStream(outputStreamCaptor));
-	}
+  @Before
+  public void setUp() {
+      System.setOut(new PrintStream(outputStreamCaptor));
+  }
   
   @Rule
   public final TextFromStandardInputStream systemInMock
@@ -34,7 +34,7 @@ public class HW2_2Test {
   }
   
   @Test
-	public void testProgramTwo() {
+  public void testProgramTwo() {
       systemInMock.provideLines(">-<0", "@");
     	HW2.runProgramTwo();
 
@@ -81,11 +81,11 @@ public class HW2_2Test {
 			    + "|----------------" +  "\n"
 			    
 			    	,"||" + "\n"
-          + "||" + "\n"
-          + "||" + "\n"
-          + "||" + "\n"
-          + "||" + "\n"
-          + "||" + "\n\n"
+			  + "||" + "\n"
+			  + "||" + "\n"
+			  + "||" + "\n"
+			  + "||" + "\n"
+			  + "||" + "\n\n"
 					    
 			    + "||" + "\n"
 			    + "||    |?|" + "\n"
@@ -121,7 +121,7 @@ public class HW2_2Test {
 	}
   
   @After
-	public void tearDown() {
+  public void tearDown() {
     	System.setOut(standardOut);
-	}
+  }
 }
