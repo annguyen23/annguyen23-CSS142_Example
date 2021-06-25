@@ -14,6 +14,6 @@ public class HW2_2Test {
   @Test
   public void summarizesTwoNumbers() {
     systemInMock.provideLines("1", "2");
-    assertEquals(3, Summarize.sumOfNumbersFromSystemIn());
+    assertEquals(4, Summarize.sumOfNumbersFromSystemIn());
   }
 }
