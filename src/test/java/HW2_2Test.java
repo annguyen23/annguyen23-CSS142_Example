@@ -27,12 +27,6 @@ public class HW2_2Test {
   @Rule
   public final TextFromStandardInputStream systemInMock
     = emptyStandardInputStream();
-
-  @Test
-  public void summarizesTwoNumbers() {
-    systemInMock.provideLines("1", "2");
-    assertEquals(4, Summarize.sumOfNumbersFromSystemIn());
-  }
   
   @Test
   public void testProgramTwo() {
@@ -81,12 +75,13 @@ public class HW2_2Test {
 			    + "||              ^" +  "\n"
 			    + "|----------------" +  "\n"
 			    
-			    	,"||" + "\n"
-			  + "||" + "\n"
-			  + "||" + "\n"
-			  + "||" + "\n"
-			  + "||" + "\n"
-			  + "||" + "\n\n"
+			     , "What does Mario Look like?\n" + "What does a Coin look like?\n"
+			    "||" + "\n"
+			    + "||" + "\n"
+			    + "||" + "\n"
+			    + "||" + "\n"
+			    + "||" + "\n"
+			    + "||" + "\n\n"
 					    
 			    + "||" + "\n"
 			    + "||    |?|" + "\n"
