@@ -30,7 +30,7 @@ public class HW2 {
     }
     
     public static void segment1(String word) {
-    	System.out.println("||");
+    	System.out.println("|| ");
     	System.out.println("||");
     	System.out.println("||" + word);
     	System.out.println("||" + word);
