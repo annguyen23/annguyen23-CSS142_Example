@@ -6,6 +6,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.After;
