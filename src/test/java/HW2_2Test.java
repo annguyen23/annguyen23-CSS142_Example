@@ -76,7 +76,7 @@ public class HW2_2Test {
 			    + "|----------------" +  "\n"
 			    
 			     , "What does Mario Look like?\n" + "What does a Coin look like?\n"
-			    "||" + "\n"
+			    + "||" + "\n"
 			    + "||" + "\n"
 			    + "||" + "\n"
 			    + "||" + "\n"
