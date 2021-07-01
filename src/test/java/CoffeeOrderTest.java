@@ -159,9 +159,8 @@ public class CoffeeOrderTest {
             CoffeeOrder.main(new String[] {});
         } catch(AssertionError e) {
             error = true;
-            Assert.assertEquals("User enters -1 for type of drinks and it is invalid, "
-                    + "so you need to check invalid inputs with assert()", 
-                    e.toString(), "java.lang.AssertionError");
+        } catch(NoSuchElementException e) {
+            error = true;
         }
         Assert.assertTrue("User enters -1 for type of drinks and it is invalid, "
                 + "so you need to check invalid inputs with assert()",  error);
@@ -175,9 +174,8 @@ public class CoffeeOrderTest {
             CoffeeOrder.main(new String[] {});
         } catch(AssertionError e) {
             error = true;
-            Assert.assertEquals("User enters 4 for type of drinks and it is invalid, "
-                    + "so you need to check invalid inputs with assert()", 
-                    e.toString(), "java.lang.AssertionError");
+        } catch(NoSuchElementException e) {
+            error = true;
         }
         Assert.assertTrue("User enters 4 for type of drinks and it is invalid, "
                 + "so you need to check invalid inputs with assert()",  error);
