@@ -13,6 +13,7 @@ import org.junit.After;
 
 import java.io.*;
 import java.util.Locale;
+import java.util.NoSuchElementException;
 
 public class CoffeeOrderTest {
     private final PrintStream standardOut = System.out;
