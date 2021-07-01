@@ -43,11 +43,11 @@ public class CoffeeOrderTest {
                 + "out new line using .println or at the end of each line."
                 + " This case tests 0 drink, so your program should print out:\n\n"
                 + "Welcome to CoffeeOrder 3000\n"
-                + "How many espresso drinks would you like today (0-3): \n"
+                + "How many espresso drinks would you like today (0-3): "
                 + "OK, so you do not want any espressos today!\n"
-                + "Thank you for using CoffeeOrder 3000\n", 
+                + "Thank you for using CoffeeOrder 3000\n\n", 
                 "Welcome to CoffeeOrder 3000\n"
-                + "How many espresso drinks would you like today (0-3): \n"
+                + "How many espresso drinks would you like today (0-3): "
                 + "OK, so you do not want any espressos today!\n"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 outputStreamCaptor.toString());
@@ -63,19 +63,21 @@ public class CoffeeOrderTest {
                 + "out new line using .println or at the end of each line."
                 + " This case tests 0 drink, so your program should print out:\n\n"
                 + "Welcome to CoffeeOrder 3000\n"
-                + "How many espresso drinks would you like today (0-3): \n"
+                + "How many espresso drinks would you like today (0-3): "
                 + "Getting order for espresso drink #1\n"
-                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): "
                 + "What size (1: Tall, 2: Grande): \n"
                 + "Your total is 4.45"
-                + "Thank you for using CoffeeOrder 3000\n", 
+                + "Thank you for using CoffeeOrder 3000\n\n", 
                 "Welcome to CoffeeOrder 3000\n"
-                + "How many espresso drinks would you like today (0-3): \n"
+                + "How many espresso drinks would you like today (0-3): "
                 + "Getting order for espresso drink #1\n"
-                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
-                + "What size (1: Tall, 2: Grande): \n"
-                + "Your total is 4.45"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): "
+                + "What size (1: Tall, 2: Grande): "
+                + "Your total is 4.45\n"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 outputStreamCaptor.toString());
     }
 }
+
+
