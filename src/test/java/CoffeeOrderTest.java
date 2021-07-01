@@ -121,10 +121,12 @@ public class CoffeeOrderTest {
     
     @Test
     public void test4drink() {
+        boolean error = false;
         try {
             systemInMock.provideLines("4");
             CoffeeOrder.main(new String[] {});
-        } catch(Exception e) {
+        } catch(AssertionError e) {
+            error = true;
         Assert.assertEquals(e.toString(), "asd");
         }
     }
