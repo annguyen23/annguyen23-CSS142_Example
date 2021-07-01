@@ -1,3 +1,5 @@
+package Assignment2;
+
 /**
  * Write a description of class CoffeeOrder here.
  *
@@ -33,6 +35,7 @@ public class CoffeeOrder
             }
         }
         assert ((coffeeType > 0) && (coffeeType < 4));
+        assert ((size > 0) && (size < 3));
         return 0;
     }
 
