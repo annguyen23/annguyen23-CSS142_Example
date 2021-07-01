@@ -128,11 +128,11 @@ public class CoffeeOrderTest {
         } catch(AssertionError e) {
             error = true;
             Assert.assertEquals("User enters 4 drinks and it is invalid, "
-                    + "so you need to check inval inputs with assert()", 
+                    + "so you need to check invalid inputs with assert()", 
                     e.toString(), "java.lang.AssertionError");
         }
         Assert.assertTrue("User enters 4 drinks and it is invalid, "
-                + "so you need to check inval inputs with assert()",  error);
+                + "so you need to check invalid inputs with assert()",  error);
     }
     
     @Test
@@ -144,11 +144,75 @@ public class CoffeeOrderTest {
         } catch(AssertionError e) {
             error = true;
             Assert.assertEquals("User enters -1 drinks and it is invalid, "
-                    + "so you need to check inval inputs with assert()", 
+                    + "so you need to check invalid inputs with assert()", 
                     e.toString(), "java.lang.AssertionError");
         }
         Assert.assertTrue("User enters -1 drinks and it is invalid, "
-                + "so you need to check inval inputs with assert()",  error);
+                + "so you need to check invalid inputs with assert()",  error);
+    }
+    
+    @Test
+    public void test_NegativeType() {
+        boolean error = false;
+        try {
+            systemInMock.provideLines("1", "-1");
+            CoffeeOrder.main(new String[] {});
+        } catch(AssertionError e) {
+            error = true;
+            Assert.assertEquals("User enters -1 for type of drinks and it is invalid, "
+                    + "so you need to check invalid inputs with assert()", 
+                    e.toString(), "java.lang.AssertionError");
+        }
+        Assert.assertTrue("User enters -1 for type of drinks and it is invalid, "
+                + "so you need to check invalid inputs with assert()",  error);
+    }
+    
+    @Test
+    public void test_Type4() {
+        boolean error = false;
+        try {
+            systemInMock.provideLines("1", "4");
+            CoffeeOrder.main(new String[] {});
+        } catch(AssertionError e) {
+            error = true;
+            Assert.assertEquals("User enters 4 for type of drinks and it is invalid, "
+                    + "so you need to check invalid inputs with assert()", 
+                    e.toString(), "java.lang.AssertionError");
+        }
+        Assert.assertTrue("User enters 4 for type of drinks and it is invalid, "
+                + "so you need to check invalid inputs with assert()",  error);
+    }
+    
+    @Test
+    public void test_NegativeSize() {
+        boolean error = false;
+        try {
+            systemInMock.provideLines("1", "1", "-1");
+            CoffeeOrder.main(new String[] {});
+        } catch(AssertionError e) {
+            error = true;
+            Assert.assertEquals("User enters -1 for size of drinks and it is invalid, "
+                    + "so you need to check invalid inputs with assert()", 
+                    e.toString(), "java.lang.AssertionError");
+        }
+        Assert.assertTrue("User enters -1 for size of drinks and it is invalid, "
+                + "so you need to check invalid inputs with assert()",  error);
+    }
+    
+    @Test
+    public void test_Size3() {
+        boolean error = false;
+        try {
+            systemInMock.provideLines("1", "1", "3");
+            CoffeeOrder.main(new String[] {});
+        } catch(AssertionError e) {
+            error = true;
+            Assert.assertEquals("User enters 3 for size of drinks and it is invalid, "
+                    + "so you need to check invalid inputs with assert()", 
+                    e.toString(), "java.lang.AssertionError");
+        }
+        Assert.assertTrue("User enters 3 for size of drinks and it is invalid, "
+                + "so you need to check invalid inputs with assert()",  error);
     }
 }
 
