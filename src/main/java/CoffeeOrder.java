@@ -1,3 +1,4 @@
+package Assignment2;
 
 /**
  * Write a description of class CoffeeOrder here.
@@ -43,9 +44,10 @@ public class CoffeeOrder
         System.out.println("Welcome to CoffeeOrder 3000");
         System.out.println("How many espresso drinks would you like today (0-3): ");
         int coffees = keyboard.nextInt();
-                
+        assert ((coffees > -1) && (coffees < 4));
+        
         double total = 0.0;
-        assert (coffees < 4);
+        
         for (int i = 1; i <= coffees; i++)
         {
             System.out.format("Getting order for espresso drink #%d\n", i);
