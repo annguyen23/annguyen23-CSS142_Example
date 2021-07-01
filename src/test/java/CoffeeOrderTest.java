@@ -160,7 +160,7 @@ public class CoffeeOrderTest {
             CoffeeOrder.main(new String[] {});
         } catch(AssertionError e) {
             error = true;
-        } catch(NoSuchElementException e) {
+        } catch(Exception e) {
             error = true;
         }
         Assert.assertTrue("User enters -1 for type of drinks and it is invalid, "
@@ -175,7 +175,7 @@ public class CoffeeOrderTest {
             CoffeeOrder.main(new String[] {});
         } catch(AssertionError e) {
             error = true;
-        } catch(NoSuchElementException e) {
+        } catch(Exception e) {
             error = true;
         }
         Assert.assertTrue("User enters 4 for type of drinks and it is invalid, "
