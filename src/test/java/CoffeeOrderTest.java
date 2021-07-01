@@ -22,9 +22,6 @@ public class CoffeeOrderTest {
     @Rule
       public final TextFromStandardInputStream systemInMock
           = emptyStandardInputStream();
-    
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
 
     @Before
     public void setUp() {
