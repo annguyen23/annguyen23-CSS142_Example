@@ -47,7 +47,7 @@ public class CoffeeOrderTest {
                 + "OK, so you do not want any espressos today!\n"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 "Welcome to CoffeeOrder 3000\n"
-                + "How many espresso drinks would you like today (0-3): 0\n"
+                + "How many espresso drinks would you like today (0-3): \n"
                 + "OK, so you do not want any espressos today!\n"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 outputStreamCaptor.toString());
@@ -70,7 +70,7 @@ public class CoffeeOrderTest {
                 + "Your total is 4.45"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 "Welcome to CoffeeOrder 3000\n"
-                + "How many espresso drinks would you like today (0-3): 0\n"
+                + "How many espresso drinks would you like today (0-3): \n"
                 + "Getting order for espresso drink #1\n"
                 + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
                 + "What size (1: Tall, 2: Grande): \n"
