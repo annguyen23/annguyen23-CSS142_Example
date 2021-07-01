@@ -214,7 +214,7 @@ public class CoffeeOrderTest {
                 + "so you need to check invalid inputs with assert()",  error);
     }
     @Test
-    public void test1drink_MochaG() {
+    public void test1drink_MochaT() {
         systemInMock.provideLines("1", "3", "1");
         CoffeeOrder.main(new String[] {});
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
