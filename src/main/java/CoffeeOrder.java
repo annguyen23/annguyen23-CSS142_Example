@@ -14,6 +14,8 @@ import java.util.Scanner;
 public class CoffeeOrder
 {
     public static double getPrice(int coffeeType, int size) {
+        assert ((coffeeType > 0) && (coffeeType < 4));
+        assert ((size > 0) && (size < 3));
         if (coffeeType == 1) {
             if (size == 1) {
                 return 2.65; // Americano, Tall
@@ -33,8 +35,7 @@ public class CoffeeOrder
                 return 4.45; // Mocha , Grande
             }
         }
-        assert ((coffeeType > 0) && (coffeeType < 4));
-        assert ((size > 0) && (size < 3));
+        
         return 0;
     }
 
