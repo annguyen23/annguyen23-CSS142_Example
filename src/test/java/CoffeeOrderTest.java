@@ -213,6 +213,92 @@ public class CoffeeOrderTest {
         Assert.assertTrue("User enters 3 for size of drinks and it is invalid, "
                 + "so you need to check invalid inputs with assert()",  error);
     }
+    @Test
+    public void test1drink_MochaG() {
+        systemInMock.provideLines("1", "3", "1");
+        CoffeeOrder.main(new String[] {});
+        Assert.assertEquals( "Check your outputs carefully. Any extra character "
+                + "like space can fail this test case.\n"
+                + "There should be 1 space  after (0-3): and you should print "
+                + "out new line using .println or at the end of each line."
+                + " This case tests 1 drink: Mocha (size Tall), "
+                + "so your program should print out:\n\n"
+                
+                + "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 3.85\n"
+                + "Thank you for using CoffeeOrder 3000\n\n", 
+                
+                "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 3.85\n"
+                + "Thank you for using CoffeeOrder 3000\n", 
+                outputStreamCaptor.toString());
+    }
+    
+    @Test
+    public void test1drink_MochaG() {
+        systemInMock.provideLines("1", "3", "2");
+        CoffeeOrder.main(new String[] {});
+        Assert.assertEquals( "Check your outputs carefully. Any extra character "
+                + "like space can fail this test case.\n"
+                + "There should be 1 space  after (0-3): and you should print "
+                + "out new line using .println or at the end of each line."
+                + " This case tests 1 drink: Mocha (size Grande), "
+                + "so your program should print out:\n\n"
+                
+                + "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 4.45\n"
+                + "Thank you for using CoffeeOrder 3000\n\n", 
+                
+                "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 4.45\n"
+                + "Thank you for using CoffeeOrder 3000\n", 
+                outputStreamCaptor.toString());
+    }
+    
+    @Test
+    public void test1drink_AmericanoT() {
+        systemInMock.provideLines("1", "1", "1");
+        CoffeeOrder.main(new String[] {});
+        Assert.assertEquals( "Check your outputs carefully. Any extra character "
+                + "like space can fail this test case.\n"
+                + "There should be 1 space  after (0-3): and you should print "
+                + "out new line using .println or at the end of each line."
+                + " This case tests 1 drink: Americano (size Tall), "
+                + "so your program should print out:\n\n"
+                
+                + "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 2.65\n"
+                + "Thank you for using CoffeeOrder 3000\n\n", 
+                
+                "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 2.65\n"
+                + "Thank you for using CoffeeOrder 3000\n", 
+                outputStreamCaptor.toString());
+    }
 }
 
 
