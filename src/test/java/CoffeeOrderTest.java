@@ -124,9 +124,12 @@ public class CoffeeOrderTest {
     
     @Test
     public void test4drink() {
-        systemInMock.provideLines("4");
-        CoffeeOrder.main(new String[] {});
-        thrown.expect(AssertionError.class);
+        try {
+            systemInMock.provideLines("4");
+            CoffeeOrder.main(new String[] {});
+        } catch(Exception e)
+        Assert.assertEquals(e.toString(), "asd");
+        }
     }
 }
 
