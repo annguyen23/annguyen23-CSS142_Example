@@ -22,6 +22,9 @@ public class CoffeeOrderTest {
     @Rule
       public final TextFromStandardInputStream systemInMock
           = emptyStandardInputStream();
+    
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
 
     @Before
     public void setUp() {
@@ -117,6 +120,13 @@ public class CoffeeOrderTest {
                 + "Your total is 6.80\n"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 outputStreamCaptor.toString());
+    }
+    
+    @Test
+    public void test4drink() {
+        systemInMock.provideLines("4");
+        CoffeeOrder.main(new String[] {});
+        thrown.expect(AssertionError.class);
     }
 }
 
