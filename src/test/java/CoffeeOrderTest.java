@@ -127,9 +127,28 @@ public class CoffeeOrderTest {
             CoffeeOrder.main(new String[] {});
         } catch(AssertionError e) {
             error = true;
-            Assert.assertEquals("you need to check inval inputs with assert()",e.toString(), "java.lang.AssertionError");
+            Assert.assertEquals("User enters 4 drinks and it is invalid, "
+                    + "so you need to check inval inputs with assert()", 
+                    e.toString(), "java.lang.AssertionError");
         }
-        Assert.assertTrue("you need to check inval inputs with assert()", error);
+        Assert.assertTrue("User enters 4 drinks and it is invalid, "
+                + "so you need to check inval inputs with assert()",  error);
+    }
+    
+    @Test
+    public void test_Negativedrink() {
+        boolean error = false;
+        try {
+            systemInMock.provideLines("-1");
+            CoffeeOrder.main(new String[] {});
+        } catch(AssertionError e) {
+            error = true;
+            Assert.assertEquals("User enters -1 drinks and it is invalid, "
+                    + "so you need to check inval inputs with assert()", 
+                    e.toString(), "java.lang.AssertionError");
+        }
+        Assert.assertTrue("User enters -1 drinks and it is invalid, "
+                + "so you need to check inval inputs with assert()",  error);
     }
 }
 
