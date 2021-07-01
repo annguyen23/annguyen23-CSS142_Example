@@ -41,7 +41,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 0 drink, so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -63,7 +63,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 2 drink: Americano (size Grande) and "
                 + "Mocha (size Tall), so your program should print out:\n\n"
                 
@@ -98,7 +98,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 2 drink: Latte (size Grande) and "
                 + "Mocha (size Grande), so your program should print out:\n\n"
                 
@@ -133,7 +133,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 2 drink: Latte (size Grande) and "
                 + "Americano (size Tall), so your program should print out:\n\n"
                 
@@ -261,7 +261,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 1 drink: Mocha (size Tall), "
                 + "so your program should print out:\n\n"
                 
@@ -290,7 +290,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 1 drink: Mocha (size Grande), "
                 + "so your program should print out:\n\n"
                 
@@ -319,7 +319,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 1 drink: Americano (size Tall), "
                 + "so your program should print out:\n\n"
                 
@@ -348,7 +348,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 1 drink: Americano (size Grande), "
                 + "so your program should print out:\n\n"
                 
@@ -377,7 +377,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 1 drink: Latte (size Grande), "
                 + "so your program should print out:\n\n"
                 
@@ -406,7 +406,7 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or at the end of each line."
+                + "out new line using .println or \\n at the end of each line."
                 + " This case tests 1 drink: Latte (size Tall), "
                 + "so your program should print out:\n\n"
                 
