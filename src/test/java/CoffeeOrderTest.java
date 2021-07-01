@@ -429,7 +429,7 @@ public class CoffeeOrderTest {
     }
     
     @Test
-    public void Test3Drinks_AT, LG, MT() {
+    public void Test3Drinks_AT_LG_MT() {
         systemInMock.provideLines("3", "1", "1", "2", "2", "3", "1");
         CoffeeOrder.main(new String[] {});
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
