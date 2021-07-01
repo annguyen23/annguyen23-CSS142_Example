@@ -127,7 +127,7 @@ public class CoffeeOrderTest {
         try {
             systemInMock.provideLines("4");
             CoffeeOrder.main(new String[] {});
-        } catch(Exception e)
+        } catch(Exception e) {
         Assert.assertEquals(e.toString(), "asd");
         }
     }
