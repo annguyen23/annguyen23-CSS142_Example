@@ -127,8 +127,9 @@ public class CoffeeOrderTest {
             CoffeeOrder.main(new String[] {});
         } catch(AssertionError e) {
             error = true;
-        Assert.assertEquals(e.toString(), "asd");
+            Assert.assertEquals("you need to check inval inputs with assert()",e.toString(), "java.lang.AssertionError");
         }
+        Assert.assertTrue("you need to check inval inputs with assert()", error);
     }
 }
 
