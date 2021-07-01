@@ -40,12 +40,12 @@ public class CoffeeOrderTest {
         Assert.assertEquals( "Check your outputs carefully. Any extra character "
                 + "like space can fail this test case.\n"
                 + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \n at the end of each line."
-                + "This case tests 0 drink, and your program should print out:\n"
+                + "out new line using .println or at the end of each line."
+                + " This case tests 0 drink, so your program should print out:\n\n"
                 + "Welcome to CoffeeOrder 3000\n"
                 + "How many espresso drinks would you like today (0-3): \n"
                 + "OK, so you do not want any espressos today!\n"
-                + "Thank you for using CoffeeOrder 3000", 
+                + "Thank you for using CoffeeOrder 3000\n", 
                 "Welcome to CoffeeOrder 3000\n"
                 + "How many espresso drinks would you like today (0-3): 0\n"
                 + "OK, so you do not want any espressos today!\n"
