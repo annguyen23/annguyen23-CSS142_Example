@@ -469,6 +469,48 @@ public class CoffeeOrderTest {
                 + "Thank you for using CoffeeOrder 3000\n", 
                 outputStreamCaptor.toString());
     }
+    
+    @Test
+    public void Test3Drinks_AG_MG_MT() {
+        systemInMock.provideLines("3", "3", "2", "1", "2", "3", "1");
+        CoffeeOrder.main(new String[] {});
+        Assert.assertEquals( "Check your outputs carefully. Any extra character "
+                + "like space can fail this test case.\n"
+                + "There should be 1 space  after (0-3): and you should print "
+                + "out new line using .println or \\n at the end of each line."
+                + " This case tests 3 drink2: Americano (size Grande), Mocha "
+                + "(size Grande), and Mocha (size Tall)"
+                + "so your program should print out:\n\n"
+                
+                + "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Getting order for espresso drink #2\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Getting order for espresso drink #3\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 11.25\n"
+                + "Thank you for using CoffeeOrder 3000\n\n", 
+                
+                "Welcome to CoffeeOrder 3000\n"
+                + "How many espresso drinks would you like today (0-3): \n"
+                + "Getting order for espresso drink #1\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Getting order for espresso drink #2\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Getting order for espresso drink #3\n"
+                + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
+                + "What size (1: Tall, 2: Grande): \n"
+                + "Your total is 11.25\n"
+                + "Thank you for using CoffeeOrder 3000\n", 
+                outputStreamCaptor.toString());
+    }
 }
 
 
