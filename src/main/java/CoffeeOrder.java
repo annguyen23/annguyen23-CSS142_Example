@@ -1,5 +1,3 @@
-package Assignment2;
-
 /**
  * Write a description of class CoffeeOrder here.
  *
