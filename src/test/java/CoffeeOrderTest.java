@@ -316,7 +316,7 @@ public class CoffeeOrderTest {
                 + "Getting order for espresso drink #1\n"
                 + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
                 + "What size (1: Tall, 2: Grande): \n"
-                + "Your total is 3.35\n"
+                + "Your total is 3.95\n"
                 + "Thank you for using CoffeeOrder 3000\n\n", 
                 
                 "Welcome to CoffeeOrder 3000\n"
@@ -324,7 +324,7 @@ public class CoffeeOrderTest {
                 + "Getting order for espresso drink #1\n"
                 + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
                 + "What size (1: Tall, 2: Grande): \n"
-                + "Your total is 3.35\n"
+                + "Your total is 3.95\n"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 outputStreamCaptor.toString());
     }
@@ -345,7 +345,7 @@ public class CoffeeOrderTest {
                 + "Getting order for espresso drink #1\n"
                 + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
                 + "What size (1: Tall, 2: Grande): \n"
-                + "Your total is 3.95\n"
+                + "Your total is 3.35\n"
                 + "Thank you for using CoffeeOrder 3000\n\n", 
                 
                 "Welcome to CoffeeOrder 3000\n"
@@ -353,8 +353,10 @@ public class CoffeeOrderTest {
                 + "Getting order for espresso drink #1\n"
                 + "What type (1: Americano, 2: Latte, 3: Mocha): \n"
                 + "What size (1: Tall, 2: Grande): \n"
-                + "Your total is 3.95\n"
+                + "Your total is 3.35\n"
                 + "Thank you for using CoffeeOrder 3000\n", 
                 outputStreamCaptor.toString());
     }
 }
+
+
