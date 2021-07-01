@@ -1,3 +1,4 @@
+
 /**
  * Write a description of class CoffeeOrder here.
  *
@@ -12,7 +13,6 @@ import java.util.Scanner;
 
 public class CoffeeOrder
 {
-
     public static double getPrice(int coffeeType, int size) {
         if (coffeeType == 1) {
             if (size == 1) {
@@ -37,24 +37,23 @@ public class CoffeeOrder
         return 0;
     }
 
-    public static int getIntegerWPrompt(String prompt)
-    {
-        Scanner keyboard =  new Scanner(System.in);
-        System.out.print(prompt);
-        return keyboard.nextInt();
-    }
-
     public static void getOrder()
     {
+        Scanner keyboard =  new Scanner(System.in);
         System.out.println("Welcome to CoffeeOrder 3000");
-        int coffees = getIntegerWPrompt("How many espresso drinks would you like today (0-3): ");
+        System.out.println("How many espresso drinks would you like today (0-3): ");
+        int coffees = keyboard.nextInt();
+                
         double total = 0.0;
         assert (coffees < 4);
         for (int i = 1; i <= coffees; i++)
         {
             System.out.format("Getting order for espresso drink #%d\n", i);
-            int coffeeType = getIntegerWPrompt("What type (1: Americano, 2: Latte, 3: Mocha): ");
-            int size = getIntegerWPrompt("What size (1: Tall, 2: Grande): ");
+            
+            System.out.println("What type (1: Americano, 2: Latte, 3: Mocha): ");
+            int coffeeType = keyboard.nextInt();
+            System.out.println("What size (1: Tall, 2: Grande): ");
+            int size = keyboard.nextInt();
             total = total + getPrice(coffeeType, size);
         } if (total > 0) {
             System.out.format("Your total is %.2f\n", total);
@@ -70,3 +69,4 @@ public class CoffeeOrder
         getOrder();
     }
 }
+
