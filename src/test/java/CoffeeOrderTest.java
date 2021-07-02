@@ -5,7 +5,6 @@ import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.*;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -33,16 +32,17 @@ public class CoffeeOrderTest {
     public void tearDown() {
         System.setOut(standardOut);
     }
+    private final String warning = "Check your outputs carefully. Any extra character "
+            + "like space can fail this test case.\n"
+            + "There should be 1 space after \':\' and you should print "
+            + "out new line using .println or \\n at the end of each line.\n";
     
     @Test
     public void test0drink() {
         systemInMock.provideLines("0");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 0 drink, so your program should print out:\n\n"
+        Assert.assertEquals( warning 
+                + " This case tests 0 drinks, so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
                 + "How many espresso drinks would you like today (0-3): \n"
@@ -60,11 +60,8 @@ public class CoffeeOrderTest {
     public void test2drink_AmericanoG_MochaT() {
         systemInMock.provideLines("2", "1", "2", "3", "1");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 2 drink: Americano (size Grande) and "
+        Assert.assertEquals( warning
+                + "This case tests 2 drinks: Americano (size Grande) and "
                 + "Mocha (size Tall), so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -95,11 +92,8 @@ public class CoffeeOrderTest {
     public void test2drink_LatteG_MochaG() {
         systemInMock.provideLines("2", "2", "2", "3", "2");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 2 drink: Latte (size Grande) and "
+        Assert.assertEquals( warning
+                + "This case tests 2 drink: Latte (size Grande) and "
                 + "Mocha (size Grande), so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -130,11 +124,8 @@ public class CoffeeOrderTest {
     public void test2drink_LatteG_AmericanoG() {
         systemInMock.provideLines("2", "2", "2", "1", "2");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 2 drink: Latte (size Grande) and "
+        Assert.assertEquals( warning 
+                + "This case tests 2 drink: Latte (size Grande) and "
                 + "Americano (size Grande), so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -258,11 +249,8 @@ public class CoffeeOrderTest {
     public void test1drink_MochaT() {
         systemInMock.provideLines("1", "3", "1");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 1 drink: Mocha (size Tall), "
+        Assert.assertEquals( warning
+                + "This case tests 1 drink: Mocha (size Tall)"
                 + "so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -287,11 +275,8 @@ public class CoffeeOrderTest {
     public void test1drink_MochaG() {
         systemInMock.provideLines("1", "3", "2");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 1 drink: Mocha (size Grande), "
+        Assert.assertEquals( warning
+                + "This case tests 1 drink: Mocha (size Grande)"
                 + "so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -316,11 +301,8 @@ public class CoffeeOrderTest {
     public void test1drink_AmericanoT() {
         systemInMock.provideLines("1", "1", "1");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 1 drink: Americano (size Tall), "
+        Assert.assertEquals( warning
+                + "This case tests 1 drink: Americano (size Tall)"
                 + "so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -345,11 +327,8 @@ public class CoffeeOrderTest {
     public void test1drink_AmericanoG() {
         systemInMock.provideLines("1", "1", "2");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 1 drink: Americano (size Grande), "
+        Assert.assertEquals( warning
+                + "This case tests 1 drink: Americano (size Grande)"
                 + "so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -374,11 +353,8 @@ public class CoffeeOrderTest {
     public void LatteG() {
         systemInMock.provideLines("1", "2", "2");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 1 drink: Latte (size Grande), "
+        Assert.assertEquals( warning
+                + "This case tests 1 drink: Latte (size Grande)"
                 + "so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -403,11 +379,8 @@ public class CoffeeOrderTest {
     public void LatteT() {
         systemInMock.provideLines("1", "2", "1");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 1 drink: Latte (size Tall), "
+        Assert.assertEquals( warning
+                + "This case tests 1 drink: Latte (size Tall)"
                 + "so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
@@ -432,11 +405,8 @@ public class CoffeeOrderTest {
     public void Test3Drinks_AT_LG_MT() {
         systemInMock.provideLines("3", "1", "1", "2", "2", "3", "1");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 3 drink2: Americano (size Tall), Latte "
+        Assert.assertEquals( warning
+                + "This case tests 3 drinks: Americano (size Tall), Latte "
                 + "(size Grande), and Mocha (size Tall)"
                 + "so your program should print out:\n\n"
                 
@@ -474,11 +444,8 @@ public class CoffeeOrderTest {
     public void Test3Drinks_AG_MG_MT() {
         systemInMock.provideLines("3", "3", "2", "1", "2", "3", "1");
         CoffeeOrder.main(new String[] {});
-        Assert.assertEquals( "Check your outputs carefully. Any extra character "
-                + "like space can fail this test case.\n"
-                + "There should be 1 space  after (0-3): and you should print "
-                + "out new line using .println or \\n at the end of each line."
-                + " This case tests 3 drink2: Americano (size Grande), Mocha "
+        Assert.assertEquals( warning
+                + "This case tests 3 drinks: Americano (size Grande), Mocha "
                 + "(size Grande), and Mocha (size Tall)"
                 + "so your program should print out:\n\n"
                 
@@ -512,5 +479,3 @@ public class CoffeeOrderTest {
                 outputStreamCaptor.toString());
     }
 }
-
-
