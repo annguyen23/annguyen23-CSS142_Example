@@ -41,7 +41,7 @@ public class CoffeeOrderTest {
   @Test
   public void test0drink() {
     systemInMock.provideLines("0");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning 
                 + " This case tests 0 drinks, so your program should print out:\n\n"
                 
@@ -60,7 +60,7 @@ public class CoffeeOrderTest {
   @Test
   public void test2drink_AmericanoGrande_MochaTall() {
     systemInMock.provideLines("2", "1", "2", "3", "1");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 2 drinks: Americano (size Grande) and "
                 + "Mocha (size Tall), so your program should print out:\n\n"
@@ -92,7 +92,7 @@ public class CoffeeOrderTest {
   @Test
   public void test2drink_LatteGrande_MochaGrande() {
     systemInMock.provideLines("2", "2", "2", "3", "2");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 2 drink: Latte (size Grande) and "
                 + "Mocha (size Grande), so your program should print out:\n\n"
@@ -124,7 +124,7 @@ public class CoffeeOrderTest {
   @Test
   public void test2drink_LatteGrande_AmericanoGrande() {
     systemInMock.provideLines("2", "2", "2", "1", "2");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning 
                 + "This case tests 2 drink: Latte (size Grande) and "
                 + "Americano (size Grande), so your program should print out:\n\n"
@@ -158,7 +158,7 @@ public class CoffeeOrderTest {
     boolean error = false;
     try {
       systemInMock.provideLines("4");
-      CoffeeOrder.main (new String[] {});
+      CoffeeOrder.main(new String[] {});
     } catch (AssertionError e) {
       error = true;
       Assert.assertEquals("User enters 4 drinks and it is invalid, "
@@ -174,7 +174,7 @@ public class CoffeeOrderTest {
     boolean error = false;
     try {
       systemInMock.provideLines("-1");
-      CoffeeOrder.main (new String[] {});
+      CoffeeOrder.main(new String[] {});
     } catch (AssertionError e) {
       error = true;
       Assert.assertEquals("User enters -1 drinks and it is invalid, "
@@ -190,7 +190,7 @@ public class CoffeeOrderTest {
     boolean error = false;
     try {
       systemInMock.provideLines("1", "-1");
-      CoffeeOrder.main (new String[] {});
+      CoffeeOrder.main(new String[] {});
     } catch (AssertionError e) {
       error = true;
     } catch (Exception e) {
@@ -205,7 +205,7 @@ public class CoffeeOrderTest {
     boolean error = false;
     try {
       systemInMock.provideLines("1", "4");
-      CoffeeOrder.main (new String[] {});
+      CoffeeOrder.main(new String[] {});
     } catch (AssertionError e) {
       error = true;
     } catch (Exception e) {
@@ -220,7 +220,7 @@ public class CoffeeOrderTest {
     boolean error = false;
     try {
       systemInMock.provideLines("1", "1", "-1");
-      CoffeeOrder.main (new String[] {});
+      CoffeeOrder.main(new String[] {});
     } catch (AssertionError e) {
       error = true;
       Assert.assertEquals("User enters -1 for size of drinks and it is invalid, "
@@ -236,7 +236,7 @@ public class CoffeeOrderTest {
     boolean error = false;
     try {
       systemInMock.provideLines("1", "1", "3");
-      CoffeeOrder.main (new String[] {});
+      CoffeeOrder.main(new String[] {});
     } catch (AssertionError e) {
       error = true;
       Assert.assertEquals("User enters 3 for size of drinks and it is invalid, "
@@ -250,7 +250,7 @@ public class CoffeeOrderTest {
   @Test
   public void test1drink_MochaTall() {
     systemInMock.provideLines("1", "3", "1");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 1 drink: Mocha (size Tall)"
                 + "so your program should print out:\n\n"
@@ -276,7 +276,7 @@ public class CoffeeOrderTest {
   @Test
   public void test1drink_MochaGrande() {
     systemInMock.provideLines("1", "3", "2");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 1 drink: Mocha (size Grande)"
                 + "so your program should print out:\n\n"
@@ -302,7 +302,7 @@ public class CoffeeOrderTest {
   @Test
   public void test1drink_AmericanoTall() {
     systemInMock.provideLines("1", "1", "1");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 1 drink: Americano (size Tall)"
                 + "so your program should print out:\n\n"
@@ -328,7 +328,7 @@ public class CoffeeOrderTest {
   @Test
   public void test1drink_AmericanoGrande() {
     systemInMock.provideLines("1", "1", "2");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 1 drink: Americano (size Grande)"
                 + "so your program should print out:\n\n"
@@ -354,7 +354,7 @@ public class CoffeeOrderTest {
   @Test
   public void LatteGrande() {
     systemInMock.provideLines("1", "2", "2");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 1 drink: Latte (size Grande)"
                 + "so your program should print out:\n\n"
@@ -380,7 +380,7 @@ public class CoffeeOrderTest {
   @Test
   public void LatteTall() {
     systemInMock.provideLines("1", "2", "1");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 1 drink: Latte (size Tall)"
                 + "so your program should print out:\n\n"
@@ -406,7 +406,7 @@ public class CoffeeOrderTest {
   @Test
   public void Test3Drinks_AT_LG_MT() {
     systemInMock.provideLines("3", "1", "1", "2", "2", "3", "1");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 3 drinks: Americano (size Tall), Latte "
                 + "(size Grande), and Mocha (size Tall)"
@@ -445,7 +445,7 @@ public class CoffeeOrderTest {
   @Test
   public void Test3Drinks_AG_MG_MT() {
     systemInMock.provideLines("3", "3", "2", "1", "2", "3", "1");
-    CoffeeOrder.main (new String[] {});
+    CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
                 + "This case tests 3 drinks: Americano (size Grande), Mocha "
                 + "(size Grande), and Mocha (size Tall)"
