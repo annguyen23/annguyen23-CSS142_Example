@@ -1,3 +1,6 @@
+import static org.junit.Assert.*;
+import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.Locale;
