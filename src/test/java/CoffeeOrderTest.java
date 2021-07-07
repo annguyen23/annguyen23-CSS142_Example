@@ -2,7 +2,8 @@
 import static org.junit.Assert.*;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.*;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.Locale;
 import java.util.NoSuchElementException;
 import org.junit.After;
@@ -351,7 +352,7 @@ public class CoffeeOrderTest {
   }
     
   @Test
-  public void LatteGrande() {
+  public void test1drink_LatteGrande() {
     systemInMock.provideLines("1", "2", "2");
     CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
@@ -377,7 +378,7 @@ public class CoffeeOrderTest {
   }
     
   @Test
-  public void LatteTall() {
+  public void test1drink_LatteTall() {
     systemInMock.provideLines("1", "2", "1");
     CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
@@ -403,7 +404,7 @@ public class CoffeeOrderTest {
   }
     
   @Test
-  public void Test3Drinks_AT_LG_MT() {
+  public void test3Drinks_AT_LG_MT() {
     systemInMock.provideLines("3", "1", "1", "2", "2", "3", "1");
     CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
@@ -442,7 +443,7 @@ public class CoffeeOrderTest {
   }
     
   @Test
-  public void Test3Drinks_AG_MG_MT() {
+  public void test3Drinks_AG_MG_MT() {
     systemInMock.provideLines("3", "3", "2", "1", "2", "3", "1");
     CoffeeOrder.main(new String[] {});
     Assert.assertEquals( warning
