@@ -42,7 +42,7 @@ public class CoffeeOrderTest {
   public void test0drink() {
     systemInMock.provideLines("0");
     CoffeeOrder.main(new String[] {});
-    Assert.assertEquals( warning 
+    Assert.assertEquals(warning 
                 + " This case tests 0 drinks, so your program should print out:\n\n"
                 
                 + "Welcome to CoffeeOrder 3000\n"
