@@ -5,7 +5,6 @@ import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.*;
 import java.io.*;
 import java.util.Locale;
 import java.util.NoSuchElementException;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
