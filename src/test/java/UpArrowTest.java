@@ -1,10 +1,11 @@
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.Locale;
+import org.junit.After;
 import org.junit.Assert;
-import org.junit.Test;
 import org.junit.Before;
 import org.junit.Ignore;
-import org.junit.After;
+import org.junit.Test;
 
 public class UpArrowTest {
   private final PrintStream standardOut = System.out;
