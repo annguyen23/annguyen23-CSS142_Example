@@ -39,7 +39,8 @@ public class Test {
         + "***\n"
         + "****\n"
         + "*****\n";
-    Assert.assertEquals(Main.printPiramid(5), output);
+    Main.printPiramid(5);
+    Assert.assertEquals(output, outputStreamCaptor.toString());
   }
   
   @Test
