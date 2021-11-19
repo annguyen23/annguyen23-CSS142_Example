@@ -77,6 +77,6 @@ public class Tests {
   
   @Test
   public void testGetDay() {
-    Assert.assertEquals("Friday", getDay(19, 11, 2021));
+    Assert.assertEquals("Friday", Main.getDay(19, 11, 2021));
   }
 }
