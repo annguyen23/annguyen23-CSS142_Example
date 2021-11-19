@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
 import org.junit.rules.Timeout; 
 
-public class Test {
+public class Tests {
   private final PrintStream standardOut = System.out;
   private final ByteArrayOutputStream outputStreamCaptor 
               = new ByteArrayOutputStream();
